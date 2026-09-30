@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+:root { --blue: #0038ff; --ink: #111318; --muted: #656b78; --line: #e8eaf0; --paper: #f8f9fb; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #fff; color: var(--ink); font-family: Arial, Helvetica, sans-serif; -webkit-font-smoothing: antialiased; }
+.font-sora { font-family: var(--font-sora), Arial, Helvetica, sans-serif; }
+::selection { background: #dce4ff; color: #111318; }
+.shell { width: min(1160px, calc(100% - 48px)); margin-inline: auto; }
+.eyebrow { display: inline-flex; align-items: center; gap: 9px; color: var(--blue); font-size: 11px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.eyebrow:before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.section-title { font-size: clamp(34px, 4vw, 52px); line-height: 1.06; letter-spacing: -.055em; font-weight: 600; }
+.soft-grid { background-image: linear-gradient(rgba(17,19,24,.035) 1px, transparent 1px), linear-gradient(90deg, rgba(17,19,24,.035) 1px, transparent 1px); background-size: 32px 32px; }
+.code-scroll::-webkit-scrollbar { height: 5px; }
+.code-scroll::-webkit-scrollbar-thumb { background: #343943; border-radius: 4px; }
+@media (max-width: 640px) { .shell { width: min(100% - 36px, 1160px); } }
